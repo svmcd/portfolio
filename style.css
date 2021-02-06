@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
+
+/**
+#121212
+#181818
+
+#40375c
+#5a4f7c
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;    
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+svg {
+    width: 30em;
+}
+
+.st0{fill:#090909;}
+.st1{fill:#40375c;}
+.blok1{fill:#40375c;}
+.blok2{fill:#40375c;}
+.blok3{fill:#40375c;}
+
+.blok1 {
+    animation: blokjes 6s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    cursor: pointer;
+}
+.blok2 {
+    animation: blokjes 6s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    cursor: pointer;
+}
+.blok3 {
+    animation: blokjes 6s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    cursor: pointer;
+}
+
+.blok1:hover {
+    fill: white;
+}
+.blok2:hover {
+    fill: white;
+}
+.blok3:hover {
+    fill: white;
+}
+
+.blokS {
+    animation: blokjes 6s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes blokjes {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .svg {
+        width: 50%;
+    }
+}
+
+#onder-c {
+    color: #e5ddff;
+    font-weight: 300;
+}
+
+hr {
+    border-color: #5a4f7c;
+    width: 30em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.quick-links h1 {
+    color: #e5ddff;
+}
+
+.link-box ul{
+    list-style: square;
+    color: #5a4f7c;
+    display: table;
+    margin: 0 auto;
+}
+
+.link-box li a{
+    text-decoration: none;
+    color: #e5ddff;
+}
+
+.link-box li a:hover{
+    color: white;
+}
