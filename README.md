@@ -2,6 +2,6 @@
 
 **GitHub repo voor mijn portfolio website**
 
-samedpolat.nl
+[samedpolat.nl](samedpolat.nl)
 
 
