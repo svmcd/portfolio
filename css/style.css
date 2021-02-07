@@ -8,7 +8,22 @@
 #5a4f7c
 */
 
-html { height: 100%; }
+html { 
+    height: 100%;
+    font-size: 100%; 
+}
+
+html::selection,
+div::selection,
+h1::selection,
+h3::selection,
+a::selection,
+p::selection,
+li::selection,
+hr::selection {
+    color: #181818;
+    background: #e5ddff;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;    
@@ -18,7 +33,7 @@ body {
 }
 
 svg {
-    margin-top: 10em;
+    margin-top: 10%;
     width: 30em;
 }
 
@@ -52,12 +67,21 @@ svg {
     }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:800px) {
     .svg {
         width: 50%;
     }
     .lijn {
         width: 50%;
+    }
+    #onder-c {
+        font-size: 1rem;
+    }
+    #quick-links {
+        font-size: 1rem;
+    }
+    #quick-link {
+        font-size: 0.8rem;
     }
 }
 
@@ -65,17 +89,18 @@ svg {
 #onder-c {
     color: #e5ddff;
     font-weight: 300;
+    margin-bottom: 2rem;
 }
 
 hr {
     border-color: #5a4f7c;
     width: 50em;
-    margin-bottom: 2em;
-    margin-top: 2em;
 }
 
 .quick-links h1 {
     color: #e5ddff;
+    font-size: 1.8rem;
+    margin-top: 2rem;
 }
 
 .link-box ul{
