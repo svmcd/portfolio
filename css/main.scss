@@ -1,33 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
 
-/**
-#121212
-#181818
+$dark : (#181818);
+$darker : (#121212);
+$l-purple: (#e5ddff);
+$d-purple: (#5a4f7c);
 
-#40375c
-#5a4f7c
-*/
+@mixin flex-center($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
 
 html { 
     height: 100%;
     font-size: 100%; 
 }
 
-html::selection,
-div::selection,
-h1::selection,
-h3::selection,
-a::selection,
-p::selection,
-li::selection,
-hr::selection {
-    color: #181818;
+::selection {
+    color: $darker;
     background: #e5ddff;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;    
-    background-color: #121212;
+    background-color: $darker;
     color: white;
     text-align: center;
 }
@@ -35,6 +32,7 @@ body {
 svg {
     margin-top: 10%;
     width: 30em;
+    margin-right: 1vw;
 }
 
 .st0{fill:#090909;}
@@ -68,16 +66,12 @@ svg {
 }
 
 @media screen and (max-width:800px) {
-    .svg {
-        width: 50%;
-    }
+    .svg,
     .lijn {
         width: 50%;
     }
-    #onder-c {
-        font-size: 1rem;
-    }
-    #quick-links {
+    #quick-links, 
+    #onder-con {
         font-size: 1rem;
     }
     #quick-link {
@@ -86,10 +80,11 @@ svg {
 }
 
 
-#onder-c {
+#onder-con {
     color: #e5ddff;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 2rem;
+    font-size: 1.8rem;
 }
 
 hr {
@@ -97,24 +92,23 @@ hr {
     width: 50em;
 }
 
-.quick-links h1 {
-    color: #e5ddff;
-    font-size: 1.8rem;
-    margin-top: 2rem;
-}
-
-.link-box ul{
-    list-style: square;
-    color: #5a4f7c;
-    display: table;
-    margin: 0 auto;
-}
-
-.link-box li a{
-    text-decoration: none;
-    color: #e5ddff;
-}
-
-.link-box li a:hover{
-    color: white;
+.quick-links {
+    h1 {
+        color: #e5ddff;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+    .link-box div{
+        list-style: square;
+        color: #5a4f7c;
+        @include flex-center(column);
+        
+    }
+    .link-box div a{
+        text-decoration: none;
+        color: #e5ddff;
+    }    
+    .link-box div a:hover{
+        color: white;
+    }
 }

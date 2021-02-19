@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap");
+html {
+  height: 100%;
+  font-size: 100%;
+}
+
+::-moz-selection {
+  color: #121212;
+  background: #e5ddff;
+}
+
+::selection {
+  color: #121212;
+  background: #e5ddff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+svg {
+  margin-top: 10%;
+  width: 30em;
+  margin-right: 1vw;
+}
+
+.st0 {
+  fill: #090909;
+}
+
+.st1 {
+  fill: #40375c;
+}
+
+.blok {
+  fill: #40375c;
+}
+
+.blok {
+  -webkit-animation: blokjes 6s infinite linear;
+          animation: blokjes 6s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  cursor: pointer;
+}
+
+.blok:hover {
+  fill: white;
+}
+
+.blokS {
+  -webkit-animation: blokjes 6s infinite linear;
+          animation: blokjes 6s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes blokjes {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes blokjes {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .svg,
+  .lijn {
+    width: 50%;
+  }
+  #quick-links,
+  #onder-con {
+    font-size: 1rem;
+  }
+  #quick-link {
+    font-size: 0.8rem;
+  }
+}
+
+#onder-con {
+  color: #e5ddff;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+hr {
+  border-color: #5a4f7c;
+  width: 50em;
+}
+
+.quick-links h1 {
+  color: #e5ddff;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.quick-links .link-box div {
+  list-style: square;
+  color: #5a4f7c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quick-links .link-box div a {
+  text-decoration: none;
+  color: #e5ddff;
+}
+
+.quick-links .link-box div a:hover {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
