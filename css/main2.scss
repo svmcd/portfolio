@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
+@import url("https://use.typekit.net/mav2ycs.css");
+
+$black : (#13070C);
+$main : (#44693D);
+$secondary : (#9CAF88);
+$l-green : (#80B192);
+$d-light : (#c4c2bd);
+$light : (#E7E5DF);
+$lighter : (#fcf9f4);
+
+/* $main : (#44693D);
+$secondary : (#9CAF88); */
+
+
+@mixin flex-center($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+::selection {
+    color: $main;
+    background: $light;
+}
+
+body {
+    height: 100vh;
+    font-family: 'sofia-pro', sans-serif; 
+    background-color: $light;
+    color: $black;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+}
+
+.header {
+    background-color: $main;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 10px 40px 10px;
+    box-shadow: -5px -7px opacity($color: #000000);
+    height: 80px;
+    border-radius: 2px;
+
+    .logo {
+        fill: $light;
+        height: 50px;
+        cursor: pointer;
+        position: relative;  
+    }
+        
+    .logo:hover {
+        fill: $secondary;
+        transition: 0.5s;
+        position: absolute;
+        margin-left: 10px;
+}
+}
+
+main {
+    @include flex-center(row);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: $lighter;
+    height: 500px;
+    width: 400px;
+    border-width: 20px;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px 10px 1px 1px;
+    border-color: $main;
+    box-shadow: -5px -7px $d-light;
+    margin: 10px;
+    @include flex-center(column);
+    text-align: center;
+    overflow: hidden;
+    z-index: 5;
+
+    h3 {
+        color: $secondary;
+    }
+
+    hr {
+        width: 200px;
+    }
+
+    p {
+        color: $black;
+        font-size: 12px;
+        width: 300px;
+        margin: 0;
+    }
+
+    .link-box {
+        @include flex-center(column);
+        text-align: center;
+        height: 380px;
+    
+        div a {
+            font-size: 20px;
+            color: $d-light;
+            text-decoration: none;
+        }
+    
+        div a:hover {
+            color: $main;
+            transition: .2s ease-in-out;
+        }
+        
+        h3 {
+            color: $secondary;
+        }
+    }
+
+    .git {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-right: 50px;
+
+        a {
+            text-decoration: none;
+            color: $secondary;
+            font-size: 30px;
+            opacity: 0.8;
+        }
+        
+        a:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.project p {
+    font-size: 14px;
+}
+
+form {
+
+    input[type='submit'] {
+        cursor: pointer;
+        border: none;
+        background-color: $secondary;
+        color: white;
+    }
+
+    input[type='submit']:hover {
+        background-color: $main;
+        transition: .2s ease-in-out;
+    }
+
+    input, .message {
+        margin-bottom: 10px;
+        width: 250px;
+        border-style: none;
+        padding: 5px;
+        background-color: $light;
+        box-shadow: -2px -2px $d-light;
+        resize: none;
+    
+        input:focus {
+            outline: none;
+        }
+    
+        .message {
+            height: 100px;
+        }
+        
+        .message:focus{
+            outline: none;
+        }
+    
+    }
+}
+
+.top-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -20;
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 500px;
+    }
+
+    .shape-fill {
+        fill: $secondary;
+        opacity: .3;
+    }
+}
+
+.bottom-shape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -10;
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 500px;
+    }
+
+    .shape-fill {
+        fill: $secondary;
+        opacity: .1;
+    }
+}
+
+.footer-basic {
+    padding: 40px 0;
+    color: $main;
+    width: 100%;
+    z-index: 2;
+
+    ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+
+        a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.8;
+        }
+        a:hover {
+            opacity:1;
+        }
+        
+    }
+
+    li {
+        padding:0 10px;
+    }
+
+    .social {
+        text-align:center;
+        padding-bottom:25px;
+
+        a {
+            font-size:24px;
+            width:40px;
+            height:40px;
+            line-height:35px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            border:1px solid $main;
+            margin:0 8px;
+            color:inherit;
+            opacity:0.75;
+        }
+
+        a:hover {
+            opacity:0.9;
+        }
+
+    }
+
+    .copyright {
+        margin-top:15px;
+        text-align:center;
+        font-size:13px;
+        color: $secondary;
+        margin-bottom:0;
+    }
+}

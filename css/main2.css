@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://use.typekit.net/mav2ycs.css");
+/* $main : (#44693D);
+$secondary : (#9CAF88); */
+::-moz-selection {
+  color: #44693D;
+  background: #E7E5DF;
+}
+::selection {
+  color: #44693D;
+  background: #E7E5DF;
+}
+
+body {
+  height: 100vh;
+  font-family: 'sofia-pro', sans-serif;
+  background-color: #E7E5DF;
+  color: #13070C;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+}
+
+.header {
+  background-color: #44693D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin: 0px 10px 40px 10px;
+  -webkit-box-shadow: -5px -7px 1;
+          box-shadow: -5px -7px 1;
+  height: 80px;
+  border-radius: 2px;
+}
+
+.header .logo {
+  fill: #E7E5DF;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header .logo:hover {
+  fill: #9CAF88;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  margin-left: 10px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box {
+  background-color: #fcf9f4;
+  height: 500px;
+  width: 400px;
+  border-width: 20px;
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 10px 10px 1px 1px;
+  border-color: #44693D;
+  -webkit-box-shadow: -5px -7px #c4c2bd;
+          box-shadow: -5px -7px #c4c2bd;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.box h3 {
+  color: #9CAF88;
+}
+
+.box hr {
+  width: 200px;
+}
+
+.box p {
+  color: #13070C;
+  font-size: 12px;
+  width: 300px;
+  margin: 0;
+}
+
+.box .link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 380px;
+}
+
+.box .link-box div a {
+  font-size: 20px;
+  color: #c4c2bd;
+  text-decoration: none;
+}
+
+.box .link-box div a:hover {
+  color: #44693D;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.box .link-box h3 {
+  color: #9CAF88;
+}
+
+.box .git {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.box .git a {
+  text-decoration: none;
+  color: #9CAF88;
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+.box .git a:hover {
+  opacity: 1;
+}
+
+.project p {
+  font-size: 14px;
+}
+
+form input[type='submit'] {
+  cursor: pointer;
+  border: none;
+  background-color: #9CAF88;
+  color: white;
+}
+
+form input[type='submit']:hover {
+  background-color: #44693D;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+form input, form .message {
+  margin-bottom: 10px;
+  width: 250px;
+  border-style: none;
+  padding: 5px;
+  background-color: #E7E5DF;
+  -webkit-box-shadow: -2px -2px #c4c2bd;
+          box-shadow: -2px -2px #c4c2bd;
+  resize: none;
+}
+
+form input input:focus, form .message input:focus {
+  outline: none;
+}
+
+form input .message, form .message .message {
+  height: 100px;
+}
+
+form input .message:focus, form .message .message:focus {
+  outline: none;
+}
+
+.top-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -20;
+}
+
+.top-shape svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 500px;
+}
+
+.top-shape .shape-fill {
+  fill: #9CAF88;
+  opacity: .3;
+}
+
+.bottom-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: -10;
+}
+
+.bottom-shape svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 500px;
+}
+
+.bottom-shape .shape-fill {
+  fill: #9CAF88;
+  opacity: .1;
+}
+
+.footer-basic {
+  padding: 40px 0;
+  color: #44693D;
+  width: 100%;
+  z-index: 2;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #44693D;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #9CAF88;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=main2.css.map */
