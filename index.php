@@ -37,16 +37,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="images/favicon.ico">
         <title>Samed Polat - Portfolio</title>
         <meta name="description" content="">
-        <link rel="stylesheet" href="css/footer.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">   
-        <link rel="stylesheet" href='css/main2.css'>
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">       
+        <link rel="stylesheet" href='css/main2.css' type="text/css">
+        </head>
     <body>
         <div class="top-shape">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -63,13 +61,13 @@
                     <p>Computer Science 50 Web is een studie van Harvard, die ook een online variant heeft. Tijdens de studie krijg je een beeld van programmeertalen als Python, JavaScript en SQL met behulp van frameworks zoals Django, React en Bootstrap.</p>
                     <hr>
                     <div>
-                        <a id="quick-link" target="blank_" href="https://samedpolat.nl/CS50/Project0/search.html"> Project 0 - Search</a>
+                        <a id="quick-link" target="blank_" href="https://github.com/svmcd/CS50W/tree/main/Project%200">Project 0 - Search</a>
                     </div>
                     <div>
-                        <a id="quick-link" target="blank_" href="#">Project 1 - Wiki</a>
+                        <a id="quick-link" target="blank_" href="https://github.com/svmcd/CS50W/tree/main/Project%201">Project 1 - Wiki</a>
                     </div>
                     <div>
-                        <a id="quick-link" target="blank_" href="#">Project 2</a>
+                        <a id="quick-link" target="blank_" href="https://github.com/svmcd/CS50W/tree/main/Project%202">Project 2 - Commerce</a>
                     </div>
                     <div>
                         <a id="quick-link" target="blank_" href="#">Project 3</a>
@@ -94,7 +92,10 @@
                         <a id="quick-link" target="blank_" href="https://samedpolat.nl/lamlisse/">Museum landingpage</a>
                     </div>
                     <div>
-                        <a id="quick-link" target="blank_" href="https://samedpolat.nl/GreenHouse/">Dashboard</a>
+                        <a id="quick-link" target="blank_" href="https://samedpolat.nl/GreenHouse/">GreenHouse</a>
+                    </div>
+                    <div>
+                        <a id="quick-link" target="blank_" href="https://samedpolat.nl/corono/">Corono</a>
                     </div>
                 </div>
                 <div class="git">

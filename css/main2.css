@@ -324,4 +324,22 @@ form input .message:focus, form .message .message:focus {
   color: #9CAF88;
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .box {
+    margin-top: 15px;
+    width: 300px;
+  }
+  .link-box p {
+    width: 280px;
+  }
+}
+
+@media only screen and (min-height: 800px) {
+  .footer-basic {
+    position: absolute;
+    bottom: 0;
+    padding-top: 50px;
+  }
+}
 /*# sourceMappingURL=main2.css.map */
